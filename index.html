@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  
+  
+  <title>SantiClinic Formulário para o Teste de Micronutrientes</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>SantiClinic</h2>
+  
+  <h3>Micronutrient Assessment Form</h3>
+  <form action=""  name="submit-to-google-sheet">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="number">Phone Number:</label>
+    <input type="tel" id="number" name="number" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="height">Height:</label>
+    <input type="text" id="height" name="height" required>
+
+    <label for="weight">Weight:</label>
+    <input type="text" id="weight" name="weight" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="" selected disabled>Select an option:</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="pregnant">Pregnant (Yes/No):</label>
+    <input type="text" id="pregnant" name="pregnant" placeholder="Enter Yes or No" required>
+
+    <label for="testDone">Have you done the test?</label>
+    <select id="testDone" name="testDone">
+      <option value="" selected disabled>Select Yes or No:</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <label for="smoking">Smoking:</label>
+    <select id="smoking" name="smoking">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="rarely">Rarely</option>
+      <option value="moderate">Moderate</option>
+      <option value="regularly">Regularly</option>
+    </select>
+
+    <label for="enduranceSports">Endurance Sports:</label>
+    <select id="enduranceSports" name="enduranceSports">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="rarely">Rarely</option>
+      <option value="moderate">Moderate</option>
+      <option value="regularly">Regularly</option>
+    </select>
+
+    <label for="profiSport">Professional Sport:</label>
+    <select id="profiSport" name="profiSport">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="rarely">Rarely</option>
+      <option value="moderate">Moderate</option>
+      <option value="regularly">Regularly</option>
+    </select>
+
+    <label for="weightTraining">Weight Training:</label>
+    <select id="weightTraining" name="weightTraining">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="rarely">Rarely</option>
+      <option value="moderate">Moderate</option>
+      <option value="regularly">Regularly</option>
+    </select>
+
+    <label for="vegan">Vegan:</label>
+    <select id="vegan" name="vegan">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="rarely">Rarely</option>
+      <option value="moderate">Moderate</option>
+      <option value="regularly">Regularly</option>
+    </select>
+
+    <label for="vegetarian">Vegetarian:</label>
+    <select id="vegetarian" name="vegetarian">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="rarely">Rarely</option>
+      <option value="moderate">Moderate</option>
+      <option value="regularly">Regularly</option>
+    </select>
+
+    <label for="aggression">Agression:</label>
+    <select id="aggression" name="aggression">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Allergies:</label>
+    <select id="allergies" name="allergies">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Weak drive:</label>
+    <select id="allergies" name="weak drive">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Arthritis:</label>
+    <select id="allergies" name="arthritis">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Osteoarthritis:</label>
+    <select id="allergies" name="osteoarthritis">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Asthma:</label>
+    <select id="allergies" name="asthma">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Eye disease:</label>
+    <select id="allergies" name="eye disease">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">High blood pressure:</label>
+    <select id="allergies" name="blood pressure">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Cholesterol problems:</label>
+    <select id="allergies" name="cholesterol problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Depression:</label>
+    <select id="allergies" name="depression">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Diabetes:</label>
+    <select id="allergies" name="diabetes">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Diarrhea:</label>
+    <select id="allergies" name="diarrhea">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Eczema, herpes:</label>
+    <select id="allergies" name="eczema,herpes">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Inflammation:</label>
+    <select id="allergies" name="inflammation">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Exhaustion:</label>
+    <select id="allergies" name="exhaustion">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Eating disorders:</label>
+    <select id="allergies" name="eating disorders">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Memory disorders:</label>
+    <select id="allergies" name="memory disorders">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Hearing problems:</label>
+    <select id="allergies" name="hearing problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Joint diseases:</label>
+    <select id="allergies" name="joint diseases">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Smelling problems:</label>
+    <select id="allergies" name="smelling problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Taste problems:</label>
+    <select id="allergies" name="taste problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Hair problems:</label>
+    <select id="allergies" name="hairs problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Skin rashes:</label>
+    <select id="allergies" name="skin rashes">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Cardiovascular problems:</label>
+    <select id="allergies" name="cardiovascular problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Hormone problems:</label>
+    <select id="allergies" name="hormone problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Hyperactivity:</label>
+    <select id="allergies" name="hyperactivity">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Infections:</label>
+    <select id="allergies" name="infections">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Liver weakness:</label>
+    <select id="allergies" name="liver weakness">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Stomach problems:</label>
+    <select id="allergies" name="stomach problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Menstrual disorders:</label>
+    <select id="allergies" name="menstrual disorders">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Osteoporosis:</label>
+    <select id="allergies" name="osteoporosis">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Parkinson's disease:</label>
+    <select id="allergies" name="parkinson's disease">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Prostate disease:</label>
+    <select id="allergies" name="prostate disease">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Tyroid problems:</label>
+    <select id="allergies" name="tyroid problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Sleep disorders:</label>
+    <select id="allergies" name="sleep disorders">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Metabolic diseases:</label>
+    <select id="allergies" name="metabolic diseases">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Stress:</label>
+    <select id="allergies" name="stress">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Addictions:</label>
+    <select id="allergies" name="addictions">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Tinnitus:</label>
+    <select id="allergies" name="tinnitus">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Incompatibilities:</label>
+    <select id="allergies" name="incompatibilities">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Constipation:</label>
+    <select id="allergies" name="constipation">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Wound healing disorder:</label>
+    <select id="allergies" name="wound healing disorder">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="allergies">Dental problems:</label>
+    <select id="allergies" name="dental problems">
+      <option value="" selected disabled>Select an option:</option>
+      <option value="no">No</option>
+      <option value="low">Low</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+    </select>
+
+    <!-- ... (Previous HTML code) ... -->
+    <fieldset>
+      <legend>Are you taking any medications?</legend>
+  
+      <p>Select any medications you are currently taking:</p>
+  
+      <label for="maoInhibitors">
+        <input type="checkbox" name="maoInhibitors"> MAO inhibitors
+      </label>
+      <br>
+  
+      <label for="painkillers">
+        <input type="checkbox" name="painkillers"> Painkillers
+      </label>
+      <br>
+  
+      <label for="cortisone">
+        <input type="checkbox" name="cortisone"> Cortisone
+      </label>
+      <br>
+  
+      <label for="circulatoryAgent">
+        <input type="checkbox" name="circulatoryAgent"> Circulatory agent
+      </label>
+      <br>
+  
+      <label for="neuroleptics">
+        <input type="checkbox" name="neuroleptics"> Neuroleptics
+      </label>
+      <br>
+  
+      <label for="antibiotics">
+        <input type="checkbox" name="antibiotics"> Antibiotics
+      </label>
+      <br>
+  
+      <label for="hormonesPill">
+        <input type="checkbox" name="hormonesPill"> Hormones / Pill
+      </label>
+      <br>
+  
+      <label for="antidepressants">
+        <input type="checkbox" name="antidepressants"> Antidepressants
+      </label>
+    </fieldset>
+<!-- ... (Remaining HTML code) ... -->
+
+
+    <label for="moreAboutYou">MORE about you:</label>
+    <textarea id="moreAboutYou" name="moreAboutYou" rows="4" cols="30"></textarea>
+    <br>
+
+    <label for="nutritionalSupplements">NUTRITIONAL SUPPLEMENTS AND MEDICATIONS:</label>
+    <textarea id="nutritionalSupplements" name="nutritionalSupplements" rows="4" cols="30"></textarea>
+
+    <label>
+      <input type="checkbox" name="confirmation" required>
+      I hereby confirm the accuracy of the information on the associated hair sample.
+    </label>
+    <br>
+
+    
+
+    <p>Please make sure that you have taken enough time to check all your details.</p>
+    <br>
+
+    
+    <input type="submit" name="submit" value="Send Information"><br>
+    <span id="success"></span>
+  </form>
+</div>
+
+
+<script>
+  const scriptURL ='https://script.google.com/macros/s/AKfycbz2cxDi0cwzGjevvSW62SWtdIiSphd28evY9Tg3YGhTOO1p_Ia0I6D4IJY1PK8_TVsD/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const success = document.getElementById('success');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      success.innerHTML="Your information has been submitted successfully.";
+
+      setTimeout(function()
+      {
+        success.innerHTML="";
+      },5000)
+      form.reset();
+
+    })
+    .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  
+
+
+
+
+
+</body>
+</html>

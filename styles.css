@@ -1,0 +1,92 @@
+body {
+  font-family: 'Times New Roman', Times, serif; /* Use a catchy font */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+
+.container {
+  max-width: 800px; /* Increase the max-width for better responsiveness */
+  margin: 20px auto;
+  background-color: #f4f4f4;;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px; /* Add more spacing below the h2 element */
+  color: #2c3e50; /* Dark blue color for heading */
+  font-size: 2em; /* You can adjust this value as needed */
+  color: #3498db;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  color: #7f8c8d; /* Gray color for labels */
+}
+
+input, select, textarea {
+  width: calc(100% - 16px); /* Adjust the width for better responsiveness */
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #bdc3c7; /* Light border color */
+  border-radius: 6px;
+}
+
+button, input[type="submit"] {
+  background: #3498db; /* Default background color */
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.4s;
+  font-size: 18px;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Add more styling for checkboxes */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+
+
+
+/* Add style for success message */
+#success {
+  display: block;
+  margin-top: 20px;
+  padding: 15px;
+  color: #155724; /* Dark green color for text */
+  background-color: #d4edda; /* Light green color for background */
+  border: 1px solid #c3e6cb; /* Border color */
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .container {
+      padding: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.5em; /* Adjust the font size for smaller screens */
+    /* Add additional styles for smaller screens */
+  }
+}
